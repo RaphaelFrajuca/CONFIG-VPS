@@ -386,7 +386,7 @@ iptables -t nat -X
 iptables -t mangle -F
 iptables -t mangle -X
 
-echo echo "\033[44;1;37m Bloqueando Tudo....   \033[0m "
+echo "\033[44;1;37m Bloqueando Tudo....   \033[0m "
 sleep 1
 # Mudando a politica - Começa bloqueando tudo
 iptables -P INPUT DROP
@@ -462,7 +462,6 @@ sleep 1
 echo "Copyright: Raphael Frajuca"
 sleep 1
 else
-echo "\033[44;1;37m Regras Inseridas com Sucesso.   \033[0m "
 sleep 1
 echo SSH TLS
 sleep 1
