@@ -3,7 +3,7 @@ clear
 # Copyright Raphel Frajuca
 # SSH TLS
 
-versao=4.7.0
+versao=4.7.3
 
 
 
