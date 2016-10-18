@@ -1,21 +1,23 @@
-# CONFIG-VPS
+CONFIG-VPS
+==========
 Um Script Basico para Configurar VPS (Instalar Servidor SQUID e Abilitar a Porta 443 para o Servidor SSH).
 
-## Instalar:
+Instalar:
+---------
 
-### Instalador
+Instalador (Recomendado)
+------------------------
 
 Obs: Execute como ROOT
 
 ::
-    wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/instalador.sh
 
+    wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/instalador.sh && chmod a+x instalador.sh
 
-::
-    chmod a+x instalador.sh
 
 
 ::
+
     sh instalador.sh
 
 
