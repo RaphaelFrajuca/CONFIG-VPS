@@ -22,3 +22,9 @@ Obs: Execute como ROOT
 
 
 O Resto fica com o Script "instalador.sh"
+
+
+Imagens:
+========
+
+.. image:: https://github.com/RaphaelFrajuca/CONFIG-VPS/raw/master/configurarvps.png
