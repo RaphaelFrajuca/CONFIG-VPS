@@ -459,14 +459,14 @@ echo "\033[44;1;37m Regras Inseridas com Sucesso.   \033[0m "
 sleep 1
 echo SSH TLS
 sleep 1
-echo "Copryght: Raphael Frajuca"
+echo "Copyright: Raphael Frajuca"
 sleep 1
 else
 echo "\033[44;1;37m Regras Inseridas com Sucesso.   \033[0m "
 sleep 1
 echo SSH TLS
 sleep 1
-echo "Copryght: Raphael Frajuca"
+echo "Copyright: Raphael Frajuca"
 sleep 1
 exit 0
 fi
