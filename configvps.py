@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-# Copyright BadGuy
+# Copyright BadGuy (Raphael Frajuca)
 # Perfect Carders (PC)
 # SSH TLS
 
