@@ -5,7 +5,18 @@ clear
 
 versao=4.7.3
 
+bash=$(echo $BASH)
 
+if [ "$bash" = "/bin/bash" ]
+then
+echo "                          Configurar VPS $versao "
+sleep 1
+echo " Forma de USO: "
+echo "sh $0 IP    "
+echo " Exemplo:"
+echo "sh $0 189.79.55.110    "
+exit 0
+fi
 
 corPadrao="\033[0m"
 preto="\033[0;30m"
