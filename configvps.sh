@@ -3,7 +3,7 @@ clear
 # Copyright Raphel Frajuca
 # SSH TLS
 
-versao=4.5.0
+versao=4.7.0
 
 corPadrao="\033[0m"
 preto="\033[0;30m"
