@@ -5,6 +5,8 @@ clear
 
 versao=4.7.0
 
+
+
 corPadrao="\033[0m"
 preto="\033[0;30m"
 vermelho="\033[0;31m"
@@ -81,8 +83,9 @@ sudo apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-r
 sleep 1
 echo "\033[44;1;37m Configurando....     \033[0m "
 sleep 1
-squid=$(ls /etc/ | grep squid)
-mkdir /etc/squid3 > /dev/null
+
+if [ -d "/etc/squid3" ]
+then
 echo "# SSH TLS ltda " > /etc/squid3/squid.conf
 echo "# ALL RIGHTS RESERVED " >> /etc/squid3/squid.conf
 echo "# Arquivo de Configuração criado por SSH TLS (sshtls.com.br) " >> /etc/squid3/squid.conf
@@ -111,7 +114,7 @@ sleep 2
 
 echo "Port 443" >> /etc/ssh/sshd_config
 
-mkdir /etc/squid > /dev/null
+else
 echo "# SSH TLS ltda " > /etc/squid/squid.conf
 echo "# ALL RIGHTS RESERVED " >> /etc/squid/squid.conf
 echo "# Arquivo de Configuração criado por SSH TLS (sshtls.com.br) " >> /etc/squid/squid.conf
@@ -138,10 +141,11 @@ echo "http_access allow REQUEST" >> /etc/squid/squid.conf
 echo "http_access deny all" >> /etc/squid/squid.conf
 sleep 2
 fi
+fi
 
 echo "\033[44;1;37m  Aplicando Mudanças....    \033[0m "
 
-if [ "$squid" = "squid3" ]
+if [ -d "/etc/squid3" ]
 then
 squid3 -k reconfigure
 service ssh restart
