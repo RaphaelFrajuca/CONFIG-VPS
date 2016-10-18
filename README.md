@@ -3,26 +3,20 @@ Um Script Basico para Configurar VPS (Instalar Servidor SQUID e Abilitar a Porta
 
 ## Instalar:
 
-### CONFIG-VPS Versão Shell Script (Recomendado)
+### Instalador
 
-Modo WGET: (Recomandado)
+Obs: Execute como ROOT
 
-wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/configvps.sh
+::
+    wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/instalador.sh
+::
 
-chmod a+x configvps.sh
+::
+    chmod a+x instalador.sh
+::
 
-Modo de Uso:
+::
+    sh instalador.sh
+::
 
-sh configvps.sh IP-VPS
-
-### CONFIG-VPS Versão Python 
-
-Modo WGET: (Recomandado)
-
-wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/configvps.py
-
-chmod a+x configvps.py
-
-Modo de Uso:
-
-python3 configvps.py
+O Resto fica com o Script "instalador.sh"
