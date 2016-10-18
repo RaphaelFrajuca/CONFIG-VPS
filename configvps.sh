@@ -157,7 +157,6 @@ if true
 then
 echo "\033[44;1;37m Configurado com Sucesso !    \033[0m "
 fi
-fi
 
 
 
