@@ -40,6 +40,8 @@ http_access allow REQUEST
 http_access deny all
 
 """
+print("\033[1;44mBaixando Recursos...\033[1;m")
+os.system("apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python nano squid3 -y > /dev/null")
 ipexport = """acl net dstdomain """
 arq.write(ipexport)
 arq.write( ip)
