@@ -27,4 +27,4 @@ O Resto fica com o Script "instalador.sh"
 Imagens:
 ========
 
-.. image:: https://github.com/RaphaelFrajuca/CONFIG-VPS/raw/master/configurarvps.png
+.. image:: https://github.com/RaphaelFrajuca/CONFIG-VPS/raw/master/configurarvps4.8.9.png
