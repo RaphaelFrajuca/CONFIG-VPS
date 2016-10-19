@@ -6,13 +6,13 @@
 
 import os
 os.system("clear")
-print('			\033[1;41mConfigurar VPS Versão Python\033[1;m')
+print('			\033[1;41mConfigurar VPS Versão Python (BETA)\033[1;m')
 
 print("\033[1;44mObs: Este Script só funciona Nestas Versões do Linux:\033[1;m")
 print("Ubuntu 12.** (The Precise Pangolin) LTS")
 print("Ubuntu 14.** (The Trusty Tahr) LTS")
 print("Debian 8 (jesse)")
-ip = input("\033[1;44mDigite seu IP:\033[1;m")
+ip = input("\033[1;44mDigite seu IP:\033[1;m \n")
 arq = open('/etc/squid3/squid.conf', 'w')
 squid = """
 # SSH TLS ltda
