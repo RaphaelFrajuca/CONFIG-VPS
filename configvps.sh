@@ -123,6 +123,7 @@ echo "http_access allow REQUEST" >> /etc/squid3/squid.conf
 echo "http_access deny all" >> /etc/squid3/squid.conf
 sleep 2
 
+echo "  " >> /etc/ssh/sshd_config
 echo "Port 443" >> /etc/ssh/sshd_config
 
 else
@@ -151,6 +152,8 @@ echo "http_access allow net" >> /etc/squid/squid.conf
 echo "http_access allow REQUEST" >> /etc/squid/squid.conf
 echo "http_access deny all" >> /etc/squid/squid.conf
 sleep 2
+echo "  " >> /etc/ssh/sshd_config
+echo "Port 443" >> /etc/ssh/sshd_config
 fi
 fi
 
@@ -224,6 +227,7 @@ echo "http_access allow REQUEST" >> /etc/squid/squid.conf
 echo "http_access deny all" >> /etc/squid/squid.conf
 sleep 2
 
+echo "  " >> /etc/ssh/sshd_config
 echo "Port 443" >> /etc/ssh/sshd_config
 
 
@@ -293,6 +297,7 @@ echo "http_access allow REQUEST" >> /etc/squid/squid.conf
 echo "http_access deny all" >> /etc/squid/squid.conf
 sleep 2
 
+echo "  " >> /etc/ssh/sshd_config
 echo "Port 443" >> /etc/ssh/sshd_config
 
 
@@ -355,6 +360,7 @@ echo "http_access allow REQUEST" >> /etc/squid3/squid.conf
 echo "http_access deny all" >> /etc/squid3/squid.conf
 sleep 2
 
+echo "  " >> /etc/ssh/sshd_config
 echo "Port 443" >> /etc/ssh/sshd_config
 
 
