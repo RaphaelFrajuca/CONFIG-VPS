@@ -28,3 +28,5 @@ Imagens:
 ========
 
 .. image:: https://github.com/RaphaelFrajuca/CONFIG-VPS/raw/master/configurarvps4.8.9.png
+
+.. image:: https://github.com/RaphaelFrajuca/CONFIG-VPS/raw/master/configurarvps4.8.9-2.png
