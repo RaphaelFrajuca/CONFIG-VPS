@@ -27,6 +27,13 @@ O Resto fica com o Script "instalador.sh"
 Imagens:
 ========
 
+Configurar VPS 
+--------------
+
 .. image:: https://github.com/RaphaelFrajuca/CONFIG-VPS/raw/master/configurarvps4.8.9.png
 
 .. image:: https://github.com/RaphaelFrajuca/CONFIG-VPS/raw/master/configurarvps4.8.9-2.png
+
+Minerar Bitcoin
+---------------
+.. image:: https://github.com/RaphaelFrajuca/CONFIG-VPS/raw/master/photo_2016-10-28_00-14-11.jpg
