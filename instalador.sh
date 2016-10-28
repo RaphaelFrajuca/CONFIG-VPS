@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -e
 
 echo "			\033[41;1;37m Instalador \033[0m "	
 sleep 1
@@ -24,6 +24,7 @@ branco="\033[1;37m"
 
 sleep 1.5s
 echo "$cyan [1] CONFIG-VPS"
+echo "$cyan [2] MINER-BITCOIN"
 read utilitario
 
 if [ "$utilitario" = "1" ]
@@ -65,6 +66,19 @@ fi
 
 fi
 
+if [ "$utilitario" = "2" ]
+then
+sleep 1
+echo "\033[44;1;37m Instalando....     \033[0m "
+sleep 0.5s
+wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/miner.sh
+echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
+
+echo "Você Pode Executar o Utilitario Assim:\n"
+echo "sudo sh$verde miner.sh CARTEIRA BITCOIN\033[0m"
+fi
+
+exit 0
 
 
 
