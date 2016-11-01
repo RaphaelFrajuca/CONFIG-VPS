@@ -4,7 +4,7 @@ clear
 # Copyright Raphel Frajuca
 # SSH TLS
 
-versao=1.7.4
+versao=1.7.8
 
 bash=$(echo $BASH)
 
@@ -58,10 +58,10 @@ sleep 1
 echo "\033[44;1;37m Testando....     \033[0m "
 while read proxys
 do
-case "$(curl --proxy $proxys -s --max-time 2 -I http://google.com | sed 's/^[^ ]*  *\([0-9]\).*/\1/; 1q')" in
-  [23]) echo "Proxy: $proxys [$verde OK \033[0m]" && echo "Proxy: $proxys [ $verde OK \033[0m]" '#BadGuy-Proxy-checker' >> work.txt;;
-  5) echo "Proxy: $proxys [$vermelho Erro \033[0m]" && echo "Proxy: $proxys [ $vermelho Erro \033[0m]" '#BadGuy-Proxy-checker' >> fail.txt;;
-  *) echo "Proxy: $proxys [$vermelho Não Funcionando. \033[0m]" && echo "Proxy: $proxys [ $vermelho Não Funcionando. \033[0m]" '#BadGuy-Proxy-checker' >> fail.txt;;
+case "$(curl --proxy $proxys -s --max-time 1 -I http://google.com | sed 's/^[^ ]*  *\([0-9]\).*/\1/; 1q')" in
+  [23]) echo "Proxy: $proxys [$verde OK \033[0m]" && echo "Proxy: $proxys [$verde OK \033[0m]" '#BadGuy-Proxy-checker' >> work.txt;;
+  5) echo "Proxy: $proxys [$vermelho Erro \033[0m]" && echo "Proxy: $proxys [$vermelho Erro \033[0m]" '#BadGuy-Proxy-checker' >> fail.txt;;
+  *) echo "Proxy: $proxys [$vermelho Não Funcionando. \033[0m]" && echo "Proxy: $proxys [$vermelho Não Funcionando. \033[0m]" '#BadGuy-Proxy-checker' >> fail.txt;;
 esac
 
 done < $lista
