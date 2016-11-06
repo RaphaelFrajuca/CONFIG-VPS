@@ -26,6 +26,7 @@ sleep 1.5s
 echo "$cyan [1] CONFIG-VPS"
 echo "$cyan [2] MINER-BITCOIN"
 echo "$cyan [3] PROXY-CHECKER"
+echo "$cyan [4] CC-GEN"
 read utilitario
 
 if [ "$utilitario" = "1" ]
@@ -92,6 +93,27 @@ echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
 echo "sudo $verde proxy ARQUIVO/CAMINHO COM A LISTA DE PROXYS\033[0m"
+fi
+
+if [ "$utilitario" = "4" ]
+then
+sleep 1
+echo "\033[44;1;37m Instalando....     \033[0m "
+sleep 0.5s
+apt-get install git python wget -y > /dev/null
+wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/cc.sh
+mv cc.sh cc
+mv cc /bin/
+chmod a+x /bin/cc
+mkdir /etc/ccgen/
+wget -O /etc/ccgen/ https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/gen.py
+git clone https://github.com/benhodgson/baluhn.git luhn
+python luhn/setup.py install
+rm -rf luhn
+echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
+
+echo "Você Pode Executar o Utilitario Assim:\n"
+echo "sudo $verde cc \033[0m BIN NUMERO-DE-CC`S"
 fi
 
 exit 0
