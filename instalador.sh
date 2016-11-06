@@ -102,9 +102,9 @@ echo "\033[44;1;37m Instalando....     \033[0m "
 sleep 0.5s
 apt-get install git python wget -y > /dev/null
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/cc.sh
-mv cc.sh cc
-mv cc /bin/
-chmod a+x /bin/cc
+mv cc.sh ccgen
+mv ccgen /bin/
+chmod a+x /bin/ccgen
 mkdir /etc/ccgen/
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/gen.py
 mv gen.py /etc/ccgen/
@@ -114,7 +114,7 @@ rm -rf luhn
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
-echo "sudo $verde cc \033[0m BIN NUMERO-DE-CCS"
+echo "sudo $verde ccgen \033[0m BIN NUMERO-DE-CCS"
 fi
 
 exit 0
