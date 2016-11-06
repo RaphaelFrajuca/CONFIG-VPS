@@ -113,16 +113,7 @@ rm -rf luhn
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
-echo "sudo $verde cc \033[0m BIN NUMERO-DE-CC`S"
+echo "sudo $verde cc \033[0m BIN NUMERO-DE-CCS"
 fi
 
 exit 0
-
-
-
-
-
-
-
-
-
