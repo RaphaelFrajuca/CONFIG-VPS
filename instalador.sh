@@ -106,7 +106,8 @@ mv cc.sh cc
 mv cc /bin/
 chmod a+x /bin/cc
 mkdir /etc/ccgen/
-wget -O /etc/ccgen/ https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/gen.py
+wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/gen.py
+mv gen.py /etc/ccgen/
 git clone https://github.com/benhodgson/baluhn.git luhn
 python luhn/setup.py install
 rm -rf luhn
