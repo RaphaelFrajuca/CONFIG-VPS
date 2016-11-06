@@ -117,4 +117,21 @@ echo "Você Pode Executar o Utilitario Assim:\n"
 echo "sudo $verde ccgen \033[0m BIN NUMERO-DE-CCS"
 fi
 
+if [ "$utilitario" = "5" ]
+then
+sleep 1
+echo "\033[44;1;37m Instalando....     \033[0m "
+sleep 0.5s
+apt-get install git python wget -y > /dev/null
+wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/hosts
+mv hosts /bin/
+chmod a+x /bin/hosts
+wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/hosts.c
+mv hosts.c /bin/
+echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
+
+echo "Você Pode Executar o Utilitario Assim:\n"
+echo "sudo $verde hosts \033[0m LISTA-COM-HOSTS"
+fi
+
 exit 0
