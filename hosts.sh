@@ -5,7 +5,7 @@ clear
 # Copyright Raphel Frajuca
 # SSH TLS
 
-versao=1.8.5
+versao=1.8.7
 
 bash=$(echo $BASH)
 
@@ -100,9 +100,7 @@ echo "$verde$curlPUT PUT \033[0m"
 echo "$verde$curlTRACE TRACE \033[0m"
 echo "$verde$curlOPTIONS OPTIONS \033[0m"
 echo "$verde$curlDELETE DELETE \033[0m"
-sleep 0.5s
+done < $lista
 hostscat=$(cat $lista | wc -l)
 echo "$cyanClaro Foram Testados $hostscat Hosts. \033[0m"
-done < $lista
-
 exit 0
