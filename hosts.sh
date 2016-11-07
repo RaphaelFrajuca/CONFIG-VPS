@@ -5,7 +5,7 @@ clear
 # Copyright Raphel Frajuca
 # SSH TLS
 
-versao=1.7.8
+versao=1.8.5
 
 bash=$(echo $BASH)
 
@@ -74,17 +74,35 @@ do
 if [ "$3" = "--no-proxy" ]
 then
 curl=$(curl --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlGET=$(curl -X GET --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlPOST=$(curl -X POST --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlHEAD=$(curl -X HEAD --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlPUT=$(curl -X PUT --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlTRACE=$(curl -X TRACE --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlOPTIONS=$(curl -X OPTIONS --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlDELETE=$(curl -X DELETE --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
 else
 curl=$(curl --proxy $2 --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlGET=$(curl --proxy $2 -X GET --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlPOST=$(curl --proxy $2 -X POST --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlHEAD=$(curl --proxy $2 -X HEAD --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlPUT=$(curl --proxy $2 -X PUT --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlTRACE=$(curl --proxy $2 -X TRACE --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlOPTIONS=$(curl --proxy $2 -X OPTIONS --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
+curlDELETE=$(curl --proxy $2 -X DELETE --max-time 3 -s -o /dev/null -w "%{http_code}" $hosts)
 fi
 
-echo "$cyanClaro Host\033[0m $amarelo $hosts \033[0m Status: $verde$curl \033[0m"
+echo "$cyanClaro Host\033[0m $amarelo $hosts \033[0m Status:  \n"
+echo "$verde$curlGET GET \033[0m"
+echo "$verde$curlPOST POST \033[0m"
+echo "$verde$curlHEAD HEAD \033[0m"
+echo "$verde$curlPUT PUT \033[0m"
+echo "$verde$curlTRACE TRACE \033[0m"
+echo "$verde$curlOPTIONS OPTIONS \033[0m"
+echo "$verde$curlDELETE DELETE \033[0m"
 sleep 0.5s
-if [ "$curl" = "200" ]
-then
-echo "GET http://$hosts/ HTTP/1.1[crlf]Host: $hosts[crlf][crlf][netData][crlf] [crlf][crlf]" "$verde OK #BadGuy-Host-Checker \033[0m" >> 200.txt 
-fi
+hostscat=$(cat $lista | wc -l)
+echo "$cyanClaro Foram Testados $hostscat Hosts. \033[0m"
 done < $lista
 
-echo "Você pode visualizar as Payloads Criadas com esse comando: \ncat 200.txt | sort -n"
 exit 0
