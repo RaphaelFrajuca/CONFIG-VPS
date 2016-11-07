@@ -137,7 +137,7 @@ sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
 sleep 0.5s
 apt-get install git python wget -y > /dev/null
-wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/hosts
+wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/hosts.sh
 mv hosts.sh hosts
 apt-get install shc -y > /dev/null
 shc -vf hosts
