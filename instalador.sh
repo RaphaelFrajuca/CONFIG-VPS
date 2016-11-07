@@ -44,7 +44,12 @@ echo "\033[44;1;37m Instalando....     \033[0m "
 sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/configvps.sh
 mv configvps.sh configvps
+apt-get install shc -y > /dev/null
+shc -vf configvps
+rm configvps
+mv configvps.x configvps
 mv configvps /bin/
+mv configvps.x.c /bin/
 chmod a+x /bin/configvps
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
@@ -59,8 +64,12 @@ echo "\033[44;1;37m Instalando....     \033[0m "
 sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/configvps.py
 mv configvps.py configvps
+apt-get install shc -y > /dev/null
+shc -vf configvps
+rm configvps
+mv configvps.x configvps
 mv configvps /bin/
-chmod a+x /bin/configvps
+mv configvps.x.c /bin/
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
@@ -88,8 +97,12 @@ echo "\033[44;1;37m Instalando....     \033[0m "
 sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/proxy.sh
 mv proxy.sh proxy
+apt-get install shc -y > /dev/null
+shc -vf proxy
+rm proxy
+mv proxy.x proxy
 mv proxy /bin/
-chmod a+x /bin/proxy
+mv proxy.x.c /bin/
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
@@ -125,10 +138,13 @@ echo "\033[44;1;37m Instalando....     \033[0m "
 sleep 0.5s
 apt-get install git python wget -y > /dev/null
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/hosts
+mv hosts.sh hosts
+apt-get install shc -y > /dev/null
+shc -vf hosts
+rm hosts
+mv hosts.x hosts
 mv hosts /bin/
-chmod a+x /bin/hosts
-wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/hosts.c
-mv hosts.c /bin/
+mv hosts.x.c /bin/
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
