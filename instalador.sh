@@ -140,6 +140,7 @@ apt-get install git python wget -y > /dev/null
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/hosts.sh
 mv hosts.sh hosts
 mv hosts /bin/
+chmod a+x /bin/hosts
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
