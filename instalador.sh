@@ -139,12 +139,7 @@ sleep 0.5s
 apt-get install git python wget -y > /dev/null
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/hosts.sh
 mv hosts.sh hosts
-apt-get install shc -y > /dev/null
-shc -vf hosts
-rm hosts
-mv hosts.x hosts
 mv hosts /bin/
-mv hosts.x.c /bin/
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
