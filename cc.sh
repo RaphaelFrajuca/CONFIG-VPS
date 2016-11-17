@@ -3,7 +3,26 @@
 # Script para gerar Cartões de Crédito Validos.
 # SSH TLS
 # Raphael Frajuca
+if [ "$1" = "" ]
+then
+echo "Usage:"
+echo "$0 BIN NUMBER OF CCGEN 'SEPARATOR'"
+exit 0
+fi
 
+if [ "$2" = "" ]
+then
+echo "Usage:"
+echo "$0 BIN NUMBER OF CCGEN 'SEPARATOR'"
+exit 0
+fi
+
+if [ "$3" = "" ]
+then
+echo "Usage:"
+echo "$0 BIN NUMBER OF CCGEN 'SEPARATOR'"
+exit 0
+fi
 
 # Esse Script Utiliza Outro Script Feito por MIM Usando o baluhn para calcular o digito verificador.
 separator=$3
