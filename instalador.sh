@@ -21,7 +21,7 @@ azulClaro="\033[1;34m"
 purpleClaro="\033[1;35m"
 cyanClaro="\033[1;36m"
 branco="\033[1;37m"
-https://github.com/RaphaelFrajuca/CONFIG-VPS/blob/master/README.rst
+
 sleep 1.5s
 echo "$cyan [1] CONFIG-VPS"
 echo "$cyan [2] MINER-BITCOIN"
