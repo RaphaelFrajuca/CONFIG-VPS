@@ -123,12 +123,12 @@ mkdir /etc/ccgen/
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/gen.py
 mv gen.py /etc/ccgen/
 git clone https://github.com/benhodgson/baluhn.git luhn
-python luhn/setup.py install
+cd luhn && python setup.py install
 rm -rf luhn
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
-echo "sudo $verde ccgen \033[0m BIN NUMERO-DE-CCS"
+echo "sudo $verde ccgen \033[0m BIN NUMERO-DE-CCS 'SEPARADOR'"
 fi
 
 if [ "$utilitario" = "5" ]
