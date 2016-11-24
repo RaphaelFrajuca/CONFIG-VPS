@@ -60,6 +60,7 @@ sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/configvps.py
 mv configvps.py configvps
 mv configvps /bin/
+chmod a+x /bin/configvps
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
