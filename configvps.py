@@ -1,18 +1,16 @@
 #!/usr/bin/env python3
 
 # Copyright BadGuy (Raphael Frajuca)
-# Perfect Carders (PC)
 # SSH TLS
 
 import os
 os.system("clear")
-print('			\033[1;41mConfigurar VPS Versão Python (BETA)\033[1;m')
+print('                 \033[1;41mConfigurar VPS Versão Python\033[1;m')
 
-print("\033[1;44mObs: Este Script só funciona Nestas Versões do Linux:\033[1;m")
-print("Ubuntu 12.** (The Precise Pangolin) LTS")
-print("Ubuntu 14.** (The Trusty Tahr) LTS")
-print("Debian 8 (jesse)")
-ip = input("\033[1;44mDigite seu IP:\033[1;m \n")
+print("\033[1;44mObs: Este Script só funciona No SQUID3 \033[1;m")
+ip = input("\033[1;44mDigite seu IP:\033[1;m \n"">>")
+print("\033[1;44mBaixando Recursos...\033[1;m")
+os.system("apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python nano squid3 -y > /dev/null")
 arq = open('/etc/squid3/squid.conf', 'w')
 squid = """
 # SSH TLS ltda
@@ -40,8 +38,6 @@ http_access allow REQUEST
 http_access deny all
 
 """
-print("\033[1;44mBaixando Recursos...\033[1;m")
-os.system("apt-get install perl libnet-ssleay-perl openssl libauthen-pam-perl libpam-runtime libio-pty-perl apt-show-versions python nano squid3 -y > /dev/null")
 ipexport = """acl net dstdomain """
 arq.write(ipexport)
 arq.write( ip)
