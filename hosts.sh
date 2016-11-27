@@ -5,13 +5,13 @@ clear
 # Copyright Raphel Frajuca
 # SSH TLS
 
-versao=1.8.5
+versao=1.8.7
 
 bash=$(echo $BASH)
 
 if [ "$bash" = "/bin/bash" ]
 then
-echo "			\033[41;1;37m Testador de Hosts $versao \033[0m "	
+echo "                  \033[41;1;37m Testador de Hosts $versao \033[0m "
 sleep 1
 echo " Forma de USO: "
 echo "sh $0 ARQUIVO COM A LISTA DE HOSTS PROXY    "
@@ -40,7 +40,7 @@ branco="\033[1;37m"
 
 if [ "$1" = ""  ]
 then
-echo "			\033[41;1;37m Testador de Hosts $versao \033[0m "	
+echo "                  \033[41;1;37m Testador de Hosts $versao \033[0m "
 sleep 1
 echo " Forma de USO: "
 echo "sh $0 ARQUIVO COM A LISTA DE HOSTS PROXY    "
@@ -51,7 +51,7 @@ fi
 
 if [ "$2" = ""  ]
 then
-echo "			\033[41;1;37m Testador de Hosts $versao \033[0m "	
+echo "                  \033[41;1;37m Testador de Hosts $versao \033[0m "
 sleep 1
 echo " Forma de USO: "
 echo "sh $0 ARQUIVO COM A LISTA DE HOSTS PROXY    "
@@ -61,7 +61,7 @@ exit 0
 fi
 
 
-echo "			\033[41;1;37m Testador de Hosts $versao \033[0m "	
+echo "                  \033[41;1;37m Testador de Hosts $versao \033[0m "
 
 lista=$1
 
@@ -100,7 +100,7 @@ echo "$verde$curlPUT PUT \033[0m"
 echo "$verde$curlTRACE TRACE \033[0m"
 echo "$verde$curlOPTIONS OPTIONS \033[0m"
 echo "$verde$curlDELETE DELETE \033[0m"
-sleep 0.5s
 done < $lista
-
+hostscat=$(cat $lista | wc -l)
+echo "$cyanClaro Foram Testados $hostscat Hosts. \033[0m"
 exit 0
